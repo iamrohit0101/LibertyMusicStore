@@ -2,7 +2,7 @@
 .. contents:: :local:
 
 Introduction
----------------
+------------
 
 `Liberty Music Store is a prototype MP3 store taking Bitcoin payments. <https://libertymusicstore.net>`_
 
@@ -42,7 +42,7 @@ Stack
 * `ffmpeg <https://www.ffmpeg.org/>`_ - audio processing
 
 Development environment setup
-------------------------------
+-----------------------------
 
 PostgreSQL is recommened. SQLite 3 won't work because it locks the full database on a write, causing conflict with page requests, AJAX requests and cryptoassets helper service accessing the database at the same moment.
 
@@ -159,7 +159,7 @@ Start the server::
     python manage.py runserver
 
 Production setup on Ubuntu
-----------------------------
+--------------------------
 
 Install::
 
@@ -179,7 +179,7 @@ Create venv::
 ... TODO
 
 FFMPEG
---------
+------
 
 FFMPEG is required in order to create the prelisten samples.
 
@@ -188,14 +188,14 @@ Installing on OSX::
     brew install ffmpeg --with-vpx --with-vorbis --with-libvorbis --with-vpx --with-vorbis --with-theora --with-libogg --with-libvorbis --with-gpl --with-version3 --with-nonfree --with-postproc --with-libaacplus --with-libass --with-libcelt --with-libfaac --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopencore-amrnb --with-libopencore-amrwb --with-libopenjpeg --with-openssl --with-libopus --with-libschroedinger --with-libspeex --with-libtheora --with-libvo-aacenc --with-libvorbis --with-libvpx --with-libx264 --with-libxvid
 
 Running tests
-----------------
+-------------
 
 Ex::
 
     python manage.py test tatianastore --settings=tatianastore.test_settings
 
 Production setup
------------------
+----------------
 
 Dependencies::
 
@@ -235,7 +235,7 @@ More
 * http://od-eon.com/blogs/calvin/postgresql-cheat-sheet-beginners/
 
 Facebook app testing
-----------------------
+--------------------
 
 TODO: deprecated
 
@@ -252,7 +252,7 @@ Making a dummy BTC payment when running in FB test mode::
     wget -S --no-check-certificate --output-document="-" "https://libertymusicstore.net:9999/blockchain_received/?transaction_hash=x&value=10000&address=1CAEmjdasqskBEJMsCeY9wUeBuofiw21cA"
 
 Other
------
+------
 
 Codename ``tatianastore`` is used through the project.
 
@@ -261,7 +261,7 @@ Codename ``tatianastore`` is used through the project.
 * http://ccmixter.org/files/grapes/16626
 
 Author
-------
+-------
 
 Mikko Ohtamaa (`blog <https://opensourcehacker.com>`_, `Facebook <https://www.facebook.com/?q=#/pages/Open-Source-Hacker/181710458567630>`_, `Twitter <https://twitter.com/moo9000>`_, `Google+ <https://plus.google.com/u/0/103323677227728078543/>`_)
 
